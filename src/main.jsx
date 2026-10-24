@@ -36,7 +36,10 @@ const router = createBrowserRouter([
       element: <Blog/>},
     ]
   },
-]);
+],
+{
+  basename: "/Vite-App"
+});
 
 ReactDOM.createRoot(document.getElementById('root')).render(
  <RouterProvider router={router} />
